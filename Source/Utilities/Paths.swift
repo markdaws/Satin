@@ -9,14 +9,14 @@
 import Foundation
 
 public func getResourcePath() -> String? {
-    if let resourcePath = Bundle(for: BasicColorMaterial.self).resourcePath {
+    if let resourcePath = Bundle(for: BasicMaterial.self).resourcePath {
         return resourcePath
     }
     return nil
 }
 
 public func getResourcePath(_ path: String) -> String? {
-    if let resourcePath = Bundle(for: BasicColorMaterial.self).resourcePath {
+    if let resourcePath = Bundle(for: BasicMaterial.self).resourcePath {
         return resourcePath + "/" + path
     }
     return nil

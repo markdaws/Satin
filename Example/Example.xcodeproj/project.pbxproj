@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		23BCBEE7979D82FA25C33DDF /* Pods_Example_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 591BEE08661F3801AE4293B7 /* Pods_Example_macOS.framework */; };
 		49BDBC704824542DFED13202 /* Pods_Example_tvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC7B8AA8B481D8E56668866F /* Pods_Example_tvOS.framework */; };
+		4DA97C63244CEFA800844F60 /* cubes-720p.mov in Resources */ = {isa = PBXBuildFile; fileRef = 4DA97C62244CEFA800844F60 /* cubes-720p.mov */; };
+		4DA97C64244CEFA800844F60 /* cubes-720p.mov in Resources */ = {isa = PBXBuildFile; fileRef = 4DA97C62244CEFA800844F60 /* cubes-720p.mov */; };
+		4DA97C65244CEFA800844F60 /* cubes-720p.mov in Resources */ = {isa = PBXBuildFile; fileRef = 4DA97C62244CEFA800844F60 /* cubes-720p.mov */; };
 		66E6788D243EC73A0070B294 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E6788C243EC73A0070B294 /* AppDelegate.swift */; };
 		66E6788F243EC73B0070B294 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66E6788E243EC73B0070B294 /* Assets.xcassets */; };
 		66E678A1243EC8FD0070B294 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E678A0243EC8FD0070B294 /* AppDelegate.swift */; };
@@ -24,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4DA97C62244CEFA800844F60 /* cubes-720p.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "cubes-720p.mov"; sourceTree = "<group>"; };
 		52F3A7177346BC870EC61F54 /* Pods-Example-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example-iOS.debug.xcconfig"; path = "Target Support Files/Pods-Example-iOS/Pods-Example-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		591BEE08661F3801AE4293B7 /* Pods_Example_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Example_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		59F0A131AC0004E45404CD8E /* Pods-Example-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example-iOS.release.xcconfig"; path = "Target Support Files/Pods-Example-iOS/Pods-Example-iOS.release.xcconfig"; sourceTree = "<group>"; };
@@ -46,7 +50,7 @@
 		E124FB3F243F8E5100380783 /* MainMenu.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
 		E124FB41243F8F7900380783 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E124FB43243F8F9600380783 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E17955F1243FA87400B0D2F4 /* Renderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Renderer.swift; sourceTree = "<group>"; };
+		E17955F1243FA87400B0D2F4 /* Renderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = Renderer.swift; sourceTree = "<group>"; tabWidth = 4; };
 		E1D95E5B244C0439008F4AB7 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FF5EDFAC5DDB7D28C8B7F1DB /* Pods-Example-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example-tvOS.release.xcconfig"; path = "Target Support Files/Pods-Example-tvOS/Pods-Example-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -82,6 +86,7 @@
 		66E67880243EC73A0070B294 = {
 			isa = PBXGroup;
 			children = (
+				4DA97C62244CEFA800844F60 /* cubes-720p.mov */,
 				E17955EF243FA80800B0D2F4 /* Source */,
 				66E6788A243EC73A0070B294 /* Products */,
 				A334006F224D8A4174A05BA2 /* Pods */,
@@ -283,6 +288,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DA97C63244CEFA800844F60 /* cubes-720p.mov in Resources */,
 				66E6788F243EC73B0070B294 /* Assets.xcassets in Resources */,
 				E124FB40243F8E5100380783 /* MainMenu.xib in Resources */,
 			);
@@ -292,6 +298,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DA97C64244CEFA800844F60 /* cubes-720p.mov in Resources */,
 				66E678AA243EC8FE0070B294 /* Assets.xcassets in Resources */,
 				E1D95E5C244C0439008F4AB7 /* LaunchScreen.storyboard in Resources */,
 			);
@@ -301,6 +308,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DA97C65244CEFA800844F60 /* cubes-720p.mov in Resources */,
 				66E678E6243EE7670070B294 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -631,15 +639,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Example-macOS/Example.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 2U8DTX59Y4;
 				INFOPLIST_FILE = Source/macOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.hi-rez.example";
+				PRODUCT_BUNDLE_IDENTIFIER = com.foo123qqq.123;
 				PRODUCT_NAME = Example;
 				SWIFT_VERSION = 5.0;
 			};
@@ -651,15 +661,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Example-macOS/Example.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 2U8DTX59Y4;
 				INFOPLIST_FILE = Source/macOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.hi-rez.example";
+				PRODUCT_BUNDLE_IDENTIFIER = com.foo123qqq.123;
 				PRODUCT_NAME = Example;
 				SWIFT_VERSION = 5.0;
 			};
@@ -671,7 +683,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = CC7PU3PUHS;
+				DEVELOPMENT_TEAM = 2U8DTX59Y4;
 				INFOPLIST_FILE = Source/iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -692,7 +704,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = CC7PU3PUHS;
+				DEVELOPMENT_TEAM = 2U8DTX59Y4;
 				INFOPLIST_FILE = Source/iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (

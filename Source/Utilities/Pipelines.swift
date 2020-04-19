@@ -224,7 +224,6 @@ func makePipelineSource(_ pipelinesPath: String, _ materialName: String, _ param
     let metalFileCompiler = MetalFileCompiler()
     do {
         var source = try metalFileCompiler.parse(includesURL)
-
         if let parameters = parameters {
             source += parameters.structString
         }

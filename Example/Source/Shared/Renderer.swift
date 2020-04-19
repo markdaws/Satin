@@ -13,10 +13,41 @@ import Forge
 import Satin
 
 class Renderer: Forge.Renderer {
+
+    /// Loads a video and extracts frames in to MTLTexture instances
+    var videoSource: VideoTextureSource!
+
+    /// If true uses the video to texture the cube, otherwise a static texture will be shown
+    /// NOTE: Video doesn't work in the simulator
+    let useVideo = true
+
+    lazy var texture: Texture? = {
+        var texture: Texture?
+        if let mtlTexture = Texture.load(
+            context: self.context,
+            named: "bricks",
+            options: [.generateMipmaps: true]) {
+
+            let samplerDescriptor = MTLSamplerDescriptor()
+            samplerDescriptor.normalizedCoordinates = true
+            samplerDescriptor.minFilter = .linear
+            samplerDescriptor.magFilter = .linear
+            samplerDescriptor.mipFilter = .linear
+            if let sampler = context.device.makeSamplerState(descriptor: samplerDescriptor) {
+                texture = Texture(mtlTexture: mtlTexture, samplerState: sampler)
+            }
+        }
+        return texture
+    }()
+
     lazy var mesh: Mesh = {
 //        Mesh(geometry: BoxGeometry(), material: UVColorMaterial())
 //         Mesh(geometry: BoxGeometry(), material: NormalColorMaterial())
-        Mesh(geometry: BoxGeometry(), material: BasicColorMaterial(simd_make_float4(1.0, 0.0, 0.0, 1.0)))
+
+        return Mesh(
+            geometry: BoxGeometry(),
+            material: BasicMaterial(color: simd_make_float4(1.0, 0.0, 0.0, 1.0), diffuse: texture)
+        )
     }()
     
     lazy var scene: Object = {
@@ -75,9 +106,18 @@ class Renderer: Forge.Renderer {
     
     override func setup() {
         //Setup things here
+
+        let url = Bundle.main.url(forResource: "cubes-720p", withExtension: "mov")!
+        videoSource = VideoTextureSource(context: context, videoUrl: url)
+        videoSource.play(repeat: true)
     }
     
     override func update() {
+
+        if useVideo, let texture = texture, let frame = videoSource.createTexture(hostTime: nil) {
+            texture.update(frame)
+        }
+
         cameraController.update()
         renderer.update()
     }
